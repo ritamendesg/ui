@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:ital,wght@0,400;0,700;1,200&family=Source+Sans+3:ital,wght@1,300&family=Work+Sans:wght@200;400&display=swap');
+
+:root {
+  --background: #242532;
+  --primary: white;
+  --font-family:'Poppins', sans-serif;
+  --font-size-body: 0.85rem;
+  --font-size-heading: 1rem;
+  --secondary: #D489B1;
+}
+
+body {
+  background-color:var(--background);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 12em 0em 12em 0em;
+}
+
+details {
+	font-size: var(--font-size-body);
+  font-family: var(--font-family);
+	margin: 0 auto;
+	width: 100%;
+	background: #F6FAFF;
+	border-radius: 8px;
+	position: relative;
+	max-width: 600px;
+  border: 1px solid #C3DEFF;
+  transition: all 0.3s ease-in-out;
+}
+
+details:hover {
+  border: 1px solid #A4A1FF;
+}
+
+summary {
+  user-select: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  list-style: none;
+  padding: 1em;
+  align-items: center;
+}
+
+summary:hover .faq-title {
+  opacity: 1;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary:focus {
+  outline: none;
+}
+
+summary:hover .expand-icon {
+  opacity: 1;
+  size: 10px;
+}
+
+.faq-title {
+  color: #1C2035;
+  font-family: var(--font-family);
+  font-size: var(--font-size-heading);
+  width: 90%;
+  opacity: 0.65;
+  transition: all 250ms ease-in-out;
+}
+
+.faq-content {
+  color: #303651;
+  font-family: var(--font-family);
+  padding: 0.2em 1em 1em 1em;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+.expand-icon {
+  opacity: 0.65;
+  width: 40px;
+}
+
+.expand-icon {
+  pointer-events: none;
+  position: absolute;
+  right: 1em;
+  transition: all 150ms ease-out;
+}
