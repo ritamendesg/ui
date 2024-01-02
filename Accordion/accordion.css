@@ -3,6 +3,7 @@
 :root {
   --background: #242532;
   --primary: white;
+  --secondary:#1C2035;
   --font-family:'Poppins', sans-serif;
   --font-size-body: 0.85rem;
   --font-size-heading: 1rem;
@@ -72,7 +73,7 @@ summary:hover .expand-icon {
 }
 
 .faq-title {
-  color: #1C2035;
+  color: var(--secondary);
   font-family: var(--font-family);
   font-size: var(--font-size-heading);
   width: 90%;
